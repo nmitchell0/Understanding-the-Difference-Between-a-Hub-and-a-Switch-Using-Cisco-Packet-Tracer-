@@ -35,7 +35,7 @@ Commands Used in Cisco Packet Tracer
 
 The ping command is used to test connectivity between devices on a network. Here’s an example:
 
-ping 10.1.2.5
+ • ping 10.1.2.5
 
 This sends a message to the device with the IP address 10.1.2.5 to check if it is reachable.
 
@@ -43,7 +43,7 @@ This sends a message to the device with the IP address 10.1.2.5 to check if it i
 
 You can view the ARP (Address Resolution Protocol) table to see which MAC addresses are linked to which IP addresses:
 
-arp -a
+• - arp -a
 
 This command helps confirm how the switch maps Layer 2 (MAC) and Layer 3 (IP) addresses.
 
@@ -51,13 +51,13 @@ This command helps confirm how the switch maps Layer 2 (MAC) and Layer 3 (IP) ad
 
 When using a hub, the ping command sends the message to all devices on the network, even if it’s intended for one device. Example:
 
-ping 10.1.2.5
+• ping 10.1.2.5
 
 Output (hub behavior):
 
-Reply from 10.1.2.5: bytes=32 time<1ms TTL=128
-Reply from 10.1.2.4: Destination host unreachable
-Reply from 10.1.2.3: Destination host unreachable
+• Reply from 10.1.2.5: bytes=32 time<1ms TTL=128
+• Reply from 10.1.2.4: Destination host unreachable
+• Reply from 10.1.2.3: Destination host unreachable
 
 This shows the message was sent to all devices, but only 10.1.2.5 responded.
 
@@ -65,11 +65,11 @@ This shows the message was sent to all devices, but only 10.1.2.5 responded.
 
 When using a switch, the ping command sends the message directly to the intended device based on its MAC address.
 
-ping 10.1.1.5
+• ping 10.1.1.5
 
 Output (switch behavior):
 
-Reply from 10.1.1.5: bytes=32 time<1ms TTL=128
+• Reply from 10.1.1.5: bytes=32 time<1ms TTL=128
 
 Here, the message is sent only to the device with IP 10.1.1.5.
 
