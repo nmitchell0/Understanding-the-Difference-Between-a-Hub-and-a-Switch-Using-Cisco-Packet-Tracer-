@@ -63,7 +63,7 @@ This shows the message was sent to all devices, but only 10.1.2.5 responded.
 
 When using a switch, the ping command sends the message directly to the intended device based on its MAC address.
 
-ping 10.1.1.5
+{ping 10.1.1.5}
 
 Output (switch behavior):
 
@@ -86,7 +86,6 @@ VLAN    MAC Address       Type        Ports
 Suggested Workflow for Testing
 
 1.	Set up the devices in Cisco Packet Tracer:
-   
 	•	Connect devices using a hub or switch.
 	•	Assign unique IP addresses to each device.
 3.	Test with a Hub:
